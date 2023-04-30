@@ -61,3 +61,11 @@
 #valor {
     margin-left: 8px;
 }
+
+.mdc-linear-progress {
+    border-radius: 8px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}

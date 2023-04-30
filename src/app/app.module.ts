@@ -20,6 +20,7 @@ import {MatInputModule} from "@angular/material/input";
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from '@angular/material/button';
 import {MatProgressBarModule} from "@angular/material/progress-bar";
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 
 @NgModule({
@@ -30,21 +31,22 @@ import {MatProgressBarModule} from "@angular/material/progress-bar";
     PlayerComponent,
     ListComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    CommonModule,
-    BrowserAnimationsModule,
-    MatListModule,
-    MatFormFieldModule,
-    MatOptionModule,
-    MatSelectModule,
-    MatInputModule,
-    MatIconModule,
-    MatButtonModule,
-    MatProgressBarModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        CommonModule,
+        BrowserAnimationsModule,
+        MatListModule,
+        MatFormFieldModule,
+        MatOptionModule,
+        MatSelectModule,
+        MatInputModule,
+        MatIconModule,
+        MatButtonModule,
+        MatProgressBarModule,
+        MatToolbarModule
+    ],
   providers: [
     SongService
   ],

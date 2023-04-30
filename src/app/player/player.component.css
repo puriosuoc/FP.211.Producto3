@@ -1,1 +1,63 @@
+.botones {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
 
+.play, .stop, .pause {
+    padding: 10px;
+}
+
+.white {
+    color: white;
+}
+
+.tiempo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barratiempo {
+    width: 85%;
+    padding: 10px;
+}
+
+/* Barra de volumen */
+
+.volumen{
+    width: 97%;
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.volumen input[type="range"] {
+
+    height: 2px;
+    margin: 0;
+    background-color: #7f7f80;
+    border-radius: 2px;
+    -webkit-appearance: none;
+}
+
+.volumen input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #663ab7;
+    border-radius: 50%;
+}
+
+.volumen input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background-color: #666;
+    border-radius: 50%;
+}
+
+#valor {
+    margin-left: 8px;
+}

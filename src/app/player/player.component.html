@@ -7,9 +7,9 @@
     <div class="songplayer">
 
       <div class="volumen">
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="volume_down_alt"></mat-icon>
+        <mat-icon color="primary" aria-hidden="false" aria-label="Example home icon" fontIcon="volume_down"></mat-icon>
         <input type="range" min="0" max="1" [(ngModel)]="audio.volume" step="0.1" id="mislider"> <span id="valor"></span>
-
+        <mat-icon color="primary" aria-hidden="false" aria-label="Example home icon" fontIcon="volume_up"></mat-icon>
       </div>
 
       <div class="tiempo">
@@ -20,8 +20,9 @@
 
 
         <div class="barratiempo" (click)="onProgressClick($event)">
+          <mat-progress-bar class="progress-bar" mode="determinate" [value]="progress"></mat-progress-bar>
+          <div class="circle" [style.--percent]="progress / 100"></div>
 
-          <mat-progress-bar mode="determinate" [value]="audio.currentTime" ></mat-progress-bar>
 
           <!--<progress class="progress-bar" [value]="audio.currentTime" [max]="audio.duration"></progress>
           <div class="circle" [style.--percent]="progress / 100"></div>-->

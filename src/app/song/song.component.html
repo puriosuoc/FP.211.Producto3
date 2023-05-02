@@ -4,49 +4,46 @@
 
     <div class="cover"><img src="{{selectedSong.image}}" class="caratula"></div>
 
-    <div class="name">{{selectedSong.tittle}}</div>
-
     <div class="songinfo">
 
-      <div class="songinfo-container1">
+      <form class="example-form">
 
-        <mat-list-item>
-          <mat-icon matListItemIcon>mic_external_on</mat-icon>
-          <div matListItemTitle>{{selectedSong.artist}}</div>
-        </mat-list-item>
-        <mat-list-item>
-          <mat-icon matListItemIcon>album</mat-icon>
-          <div matListItemTitle>{{selectedSong.disc}}</div>
-        </mat-list-item>
-        <mat-list-item>
-          <mat-icon matListItemIcon>sell</mat-icon>
-          <div matListItemTitle>{{selectedSong.style}}</div>
-        </mat-list-item>
+        <mat-form-field class="example-full-width">
+          <mat-label><mat-icon matListItemIcon>type_specimen</mat-icon> Tittle</mat-label>
+          <input matInput placeholder="" value="{{selectedSong.tittle}}" required>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label><mat-icon matListItemIcon>mic_external_on</mat-icon> Author</mat-label>
+          <input matInput placeholder="" value="{{selectedSong.artist}}" required>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label><mat-icon matListItemIcon>interpreter_mode</mat-icon> Subttitle</mat-label>
+          <input matInput placeholder="" value="{{selectedSong.subtittle}}" required>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label><mat-icon matListItemIcon>album</mat-icon> Album</mat-label>
+          <input matInput placeholder="" value="{{selectedSong.disc}}" required>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label><mat-icon matListItemIcon>calendar_month</mat-icon> Year</mat-label>
+          <input matInput placeholder="" value="{{selectedSong.year}}" required>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label><mat-icon matListItemIcon>sell</mat-icon> Style</mat-label>
+          <select matNativeControl required>
+            <option value="selected">{{selectedSong.style}}</option>
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Clásica">Clásica</option>
+            <option value="Power Metal">Power Metal</option>
+            <option value="Trap">Trap</option>
+            <option value="Pop Rock">Pop Rock</option>
+          </select>
+        </mat-form-field>
 
-      </div>
+        <button mat-raised-button disabled>Submit</button>
+      </form>
 
-      <div class="songinfo-container2">
-
-        <mat-list-item>
-          <mat-icon matListItemIcon>interpreter_mode</mat-icon>
-          <div matListItemTitle>{{selectedSong.subtittle}}</div>
-        </mat-list-item>
-        <mat-list-item>
-          <mat-icon matListItemIcon>calendar_month</mat-icon>
-          <div matListItemTitle>{{selectedSong.year}}</div>
-        </mat-list-item>
-
-      </div>
-
-    </div>
-
-    <div class="likecontainer">
-      <button mat-icon-button color="accent" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button mat-icon-button color="accent" class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>thumb_up</mat-icon>
-      </button>
     </div>
 
   </div>

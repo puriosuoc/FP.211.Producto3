@@ -34,33 +34,7 @@
     align-items: center;
 }
 
-.volumen input[type="range"] {
 
-    height: 2px;
-    margin: 0;
-    background-color: #7f7f80;
-    border-radius: 2px;
-    -webkit-appearance: none;
-}
-
-.volumen input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 16px;
-    height: 16px;
-    background-color: #663ab7;
-    border-radius: 50%;
-}
-
-.volumen input[type="range"]::-moz-range-thumb {
-    width: 16px;
-    height: 16px;
-    background-color: #666;
-    border-radius: 50%;
-}
-
-#valor {
-    margin-left: 8px;
-}
 
 .mdc-linear-progress {
     border-radius: 8px;

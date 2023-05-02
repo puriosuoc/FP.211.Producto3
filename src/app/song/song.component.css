@@ -35,13 +35,6 @@
   border-radius: 6px 6px 0px 0px;
 }
 
-.songinfo {
-  background-color: #eae5f5;
-  border-radius: 6px;
-  padding: 20px;
-  display: flex;
-}
-
 .cover {
   align-items: center;
   display: flex;
@@ -51,7 +44,7 @@
 }
 
 .caratula {
-  width: 60%;
+  width: 50%;
   border-radius: 6px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);
 }
@@ -61,6 +54,13 @@
   font-size: 30px;
   top: 150px;
   color: #bda7e8;
+}
+/*
+.songinfo {
+  background-color: #eae5f5;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
 }
 
 .songinfo mat-list-item{
@@ -83,9 +83,23 @@
 .songinfo-container2, .songinfo-container1 {
   width: 50%;
 }
-
+*/
 .likecontainer {
   display: flex;
   justify-content: center;
   padding-top: 15px;
 }
+
+.songinfo {
+  display: flex;
+  justify-content: center;
+  text-align: -webkit-center;
+  padding-top: 30px;
+}
+
+.songinfo mat-form-field {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 45%;
+}
+

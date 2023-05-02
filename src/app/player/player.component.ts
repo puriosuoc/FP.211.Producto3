@@ -17,7 +17,6 @@ export class PlayerComponent implements OnInit {
   buttonActive = false;
   currentTime: number = 0;
 
-  circlePosition = '0%';
 
   constructor(protected songService: SongService) {}
   progress = 0;
@@ -31,6 +30,7 @@ export class PlayerComponent implements OnInit {
       this.audio.currentTime = this.currentTime;
       this.buttonActive = false;
       this.currentTime = 0;
+      this.audio.volume = 0.5;
     });
   }
 
@@ -66,25 +66,6 @@ export class PlayerComponent implements OnInit {
     this.playing = false;
     this.buttonActive = false;
   }
-/*
-  updateProgress() {
-
-    this.progress = (this.audio.currentTime / this.audio.duration * 100 || 0)
-    setTimeout(() => {
-      this.updateProgress();
-    }, 1000)
-
-    console.log("Progreso:" + this.audio.currentTime);
-  }
-
-  onProgressClick(event: MouseEvent) {
-    const rect = (<HTMLDivElement>event.target).getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const width = rect.width;
-    const percent = x / width;
-    const newTime = percent * this.audio.duration;
-    this.audio.currentTime = newTime;
-  }*/
 
   updateProgress() {
     this.progress = (this.audio.currentTime / this.audio.duration * 100 || 0)

@@ -66,6 +66,7 @@ export class PlayerComponent implements OnInit {
     this.audio.currentTime = 0;
     this.playing = false;
     this.buttonActive = false;
+    this.currentTime = 0;
   }
 
   updateProgress() {

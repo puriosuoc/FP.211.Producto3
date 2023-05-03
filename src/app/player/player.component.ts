@@ -40,6 +40,7 @@ export class PlayerComponent implements OnInit {
     this.buttonActive = false;
     this.currentTime = 0;
     this.progress = 0;
+    this.audio.currentTime = this.currentTime;
   }
 
   playSound() {

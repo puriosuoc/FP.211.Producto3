@@ -2,6 +2,8 @@
 
   <div class="list">
 
+    <div class="filtros">
+
     <mat-form-field class="tittle">
       <input matInput [(ngModel)]="searchTittle" placeholder="Search by Tittle">
     </mat-form-field>
@@ -19,12 +21,14 @@
       </mat-select>
     </mat-form-field>
 
+    </div>
+
     <mat-list *ngFor="let song of songs" [class.selected]="song === selectedSong" (click)="onSelect(song)" class="itemlist" >
       <a mat-list-item *ngIf="song.tittle.toLowerCase().includes(searchTittle.toLowerCase()) && song.style.toLowerCase().includes(searchStyle.toLowerCase())">
         <img matListItemAvatar src="{{song.image}}" class="portada" alt="">
         <h3 matListItemTitle>{{song.tittle}}</h3>
         <p matListItemLine>
-          <span>{{song.subtittle}}</span>
+          By <span>{{song.artist}}</span> ft. <span>{{song.subtittle}}</span>
         </p>
       </a>
     </mat-list>

@@ -25,32 +25,14 @@
 }
 
 .name {
-  color: #a4e8ad;
+  color: #663ab7;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-  padding-bottom: 10px;
-  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 30px;
   background-position: center;
   border-radius: 6px 6px 0px 0px;
-}
-
-.songinfo {
-  background-color: rgba(247, 247, 247, 0.9);
-  border-radius: 6px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.item {
-  padding: 5px 10px 5px 10px;
-  font-size: 18px;
-}
-
-.item > i{
-  color: #a4e8ad;
-  font-size: 18px;
-  padding-right:10px;
 }
 
 .cover {
@@ -62,14 +44,62 @@
 }
 
 .caratula {
-  width: 250px;
+  width: 50%;
   border-radius: 6px;
-  box-shadow: 9px 9px 16px rgba(162, 162, 162, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);
 }
 
 .alert {
   text-align: center;
   font-size: 30px;
   top: 150px;
-  color: #9bdea4;
+  color: #bda7e8;
 }
+/*
+.songinfo {
+  background-color: #eae5f5;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+}
+
+.songinfo mat-list-item{
+  height: 40px;
+
+}
+
+.songinfo mat-icon{
+  color: #bda7e8;
+}
+
+.songinfo div{
+  font-size: 18px;
+}
+
+.mdc-list-item--with-leading-icon .mdc-list-item__start {
+  margin-right: 16px;
+}
+
+.songinfo-container2, .songinfo-container1 {
+  width: 50%;
+}
+*/
+.likecontainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.songinfo {
+  display: flex;
+  justify-content: center;
+  text-align: -webkit-center;
+  padding-top: 30px;
+}
+
+.songinfo mat-form-field {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 45%;
+}
+

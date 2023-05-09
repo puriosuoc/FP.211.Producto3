@@ -1,3 +1,5 @@
+
+
 /* List CSS styles */
 .container {
   background-color: var(--background);
@@ -122,12 +124,33 @@ h2 {
 }
 
 .mdc-list:hover {
-  color: #607D8B;
-  background-color: #DDD;
+  background-color: #d7ccec;
   left: .1em;
 }
 
 .list {
   padding-bottom: 15px;
   padding-top: 15px;
+}
+
+mat-list.selected {
+  background-color: #bda7e8;
+}
+
+mat-list.selected:hover {
+  background-color: #bda7e8;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+}
+
+.filtros mat-form-field {
+  padding-right: 10px;
+  padding-left: 10px;
 }
